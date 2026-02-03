@@ -1,0 +1,17 @@
+{
+  "name": "pfc-root",
+  "version": "1.0.0",
+  "description": "Jeu PFC",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "postinstall": "cd server && npm install",
+    "start": "node server/index.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

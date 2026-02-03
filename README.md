@@ -1,3 +1,5 @@
+Go to the project deployed : https://pfc-ezap.onrender.com/pfc
+
 Follow these commands to run the project
 
 In a first terminal run : 
@@ -32,4 +34,13 @@ npm install
 Start the server : 
 ```shell
 nodemon
+```
+
+Or to do both at the same time :
+```shell
+npm run build
+```
+
+```shell
+npm start
 ```

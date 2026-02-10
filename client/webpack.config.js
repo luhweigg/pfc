@@ -32,6 +32,14 @@ new CopyPlugin({
           from: "src/assets/favicon.ico", 
           to: "favicon.ico" 
         },
+        {
+          from: "src/html/about.html",
+          to: "about.html"
+        },
+        {
+          from: "src/html/home.html",
+          to: "home.html"
+        },
       ],
     }),
   ],

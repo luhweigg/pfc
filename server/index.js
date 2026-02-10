@@ -29,11 +29,11 @@ const server = http.createServer((req, res) => {
     console.log(`Requête reçue : ${url}`);
 
     if (url === '/') {
-        const filePath = path.join(__dirname, 'pages', 'home.html');
+        const filePath = path.join(__dirname, 'public', 'home.html');
         sendFile(res, filePath, 'text/html');
 
     } else if (url === '/about') {
-        const filePath = path.join(__dirname, 'pages', 'about.html');
+        const filePath = path.join(__dirname, 'public', 'about.html');
         sendFile(res, filePath, 'text/html');
 
     } else if (url === '/pfc') {
@@ -136,5 +136,8 @@ io.on('connection', (socket) => {
     });
 });
 
-const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => {});
+const PORT = 3000;
+server.listen(PORT, () => {
+    console.log(`Serveur démarré sur http://localhost:${PORT}`);
+    console.log(`Pour jouer, rendez-vous sur http://localhost:${PORT}/pfc`);
+});

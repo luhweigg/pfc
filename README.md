@@ -1,4 +1,4 @@
-Go to the project deployed : https://pfc-ezap.onrender.com/pfc
+Go to the project deployed : https://pfc-ezap.onrender.com/
 
 Follow these commands to run the project
 

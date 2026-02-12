@@ -1,0 +1,43 @@
+.container {
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 { 
+    color: #2c3e50; 
+}
+
+.links { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-top: 30px; 
+}
+
+.links a { 
+    text-decoration: none; 
+    padding: 15px; 
+    background: #007bff; 
+    color: white; 
+    border-radius: 5px; 
+    font-size: 1.2rem; 
+    transition: 0.3s; 
+    display: block;
+}
+
+.links a:hover { 
+    background: #0056b3; 
+}
+
+.links a.secondary { 
+    background: #6c757d; 
+}
+
+.links a.secondary:hover { 
+    background: #5a6268; 
+}

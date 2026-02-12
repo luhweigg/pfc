@@ -3,7 +3,10 @@ import { MSG_WELCOME, MSG_FULL, MSG_WAITING, MSG_START, MSG_PLAY, MSG_RESULT, MS
 import { updateMessage, initButtons, initRestartButton, toggleRestartButton, setButtonsDisabled, showFullMessage } from "./ui";
 
 export function initGame() {
-    const socket = io();
+    const namespace = window.location.pathname.includes('singleplayer') ? '/single' : '/multi';
+    const socket = io(namespace);
+
+    console.log(`Connexion au namespace : ${namespace}`);
 
     setButtonsDisabled(true);
 

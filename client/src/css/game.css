@@ -1,16 +1,11 @@
-body {
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-    margin-top: 50px;
-}
-
 #game-container {
     background: white;
     padding: 2rem;
     border-radius: 10px;
-    display: inline-block;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
 }
 
 .buttons {
@@ -45,8 +40,6 @@ button:hover {
 
 #btn-restart {
     background-color: #28a745;
-    font-weight: bold;
-    padding: 12px 24px;
 }
 
 #btn-restart:hover {

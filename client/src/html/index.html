@@ -2,26 +2,32 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeu PFC - Socket.io</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="game-container">
-        <h1>Pierre - Feuille - Ciseaux</h1>
-        
-        <div id="message-box" class="status">En attente du serveur...</div>
-
-        <div class="buttons" id="game-buttons">
-            <button class="btn-pfc" data-coup="pierre">🪨 Pierre</button>
-            <button class="btn-pfc" data-coup="feuille">📄 Feuille</button>
-            <button class="btn-pfc" data-coup="ciseaux">✂️ Ciseaux</button>
+    <nav class="navbar">
+        <div class="nav-logo">Pierre Feuille Ciseaux</div>
+        <ul class="nav-links">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/singleplayer">Solo</a></li>
+            <li><a href="/multiplayer">Multi</a></li>
+            <li><a href="/about">A propos</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <h1>Bienvenue sur le Hub de Jeux</h1>
+            <p>Selectionnez une option ci-dessous :</p>
+            
+            <div class="links">
+                <a href="/singleplayer">Jouer a Pierre-Feuille-Ciseaux (Solo)</a>
+                <a href="/multiplayer">Jouer a Pierre-Feuille-Ciseaux (Multi)</a>
+                <a href="/about" class="secondary">A propos / Credits</a>
+            </div>
         </div>
-
-        <div id="restart-container" style="display: none; margin-top: 20px;">
-        <button id="btn-restart">🔄 Recommencer</button>
-        </div>
-    </div>
+    </main>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu PFC</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">Pierre Feuille Ciseaux</div>
+        <ul class="nav-links">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/singleplayer">Solo</a></li>
+            <li><a href="/multiplayer">Multi</a></li>
+            <li><a href="/about">A propos</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div id="game-container">
+            <h1>Pierre - Feuille - Ciseaux</h1>
+            
+            <div id="message-box" class="status">En attente du serveur...</div>
+
+            <div class="buttons" id="game-buttons">
+                <button class="btn-pfc" data-coup="pierre">Pierre</button>
+                <button class="btn-pfc" data-coup="feuille">Feuille</button>
+                <button class="btn-pfc" data-coup="ciseaux">Ciseaux</button>
+            </div>
+
+            <div id="restart-container" style="display: none; margin-top: 20px;">
+                <button id="btn-restart">Recommencer</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

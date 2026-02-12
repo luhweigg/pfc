@@ -19,26 +19,39 @@ export default {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/html/index.html',
+      template: './src/html/game.html',
+      filename: 'game.html',
     }),
 
 new CopyPlugin({
       patterns: [
         { 
-          from: "src/css/style.css", 
-          to: "style.css" 
+          from: "src/css/index.css", 
+          to: "index.css" 
+        },
+        { 
+          from: "src/css/game.css", 
+          to: "game.css" 
+        },
+        { 
+          from: "src/css/about.css", 
+          to: "about.css" 
+        },
+        { 
+          from: "src/css/navbar.css", 
+          to: "navbar.css" 
         },
         { 
           from: "src/assets/favicon.ico", 
           to: "favicon.ico" 
         },
         {
-          from: "src/html/about.html",
-          to: "about.html"
+          from: "src/html/index.html",
+          to: "index.html"
         },
         {
-          from: "src/html/home.html",
-          to: "home.html"
+          from: "src/html/about.html",
+          to: "about.html"
         },
       ],
     }),
